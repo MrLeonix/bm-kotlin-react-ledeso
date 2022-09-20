@@ -1,5 +1,5 @@
 const validateEquation = (equationString: string) => {
-  const equationRegExMatcher = /^(\d+)\s*\+\s*(\d+)\s*\=\s*(\d+)$/;
+  const equationRegExMatcher = /^(\d+)\s*\+\s*(\d+)\s*=\s*(\d+)$/;
   const regExMatch = equationString.match(equationRegExMatcher);
 
   if (!regExMatch) return "syntax error";
